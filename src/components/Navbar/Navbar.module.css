@@ -41,6 +41,9 @@ nav {
     border-radius: 100px;
   }
 
+  button:first-child {
+    visibility: hidden;
+  }
   button:last-child {
     background-color: #fff;
     color: #000;
@@ -51,5 +54,11 @@ nav {
 @media (min-width: 768px) {
   .menuWrapper {
     display: flex;
+  }
+
+  .buttonNavWrapper {
+    button:first-child {
+      visibility: visible;
+    }
   }
 }
