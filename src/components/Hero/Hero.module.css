@@ -99,19 +99,21 @@
 
 .buttonHeroWrapper {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 1.5rem;
 
   button {
     border: none;
     background-color: transparent;
     color: #fff;
-    padding: 1.56rem 2.5rem;
+    padding: 1rem 2rem;
     border-radius: 100px;
     display: flex;
     align-items: center;
     gap: 1rem;
     cursor: pointer;
+    justify-content: center;
   }
 
   button:first-child {
@@ -125,15 +127,31 @@
   max-width: "1020px";
 }
 
+@media (min-width: 648px) {
+  .titleHeroWrapper {
+    h1 {
+      backdrop-filter: none;
+    }
+    p {
+      backdrop-filter: none;
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .titleHeroWrapper {
     h1 {
       font-size: 3.875rem;
       line-height: 4.625rem;
-      backdrop-filter: none;
     }
-    p {
-      backdrop-filter: none;
+  }
+
+  .buttonHeroWrapper {
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+    button {
+      padding: 1.56rem 3.5rem;
     }
   }
 }
