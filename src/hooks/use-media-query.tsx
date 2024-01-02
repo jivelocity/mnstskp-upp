@@ -16,9 +16,5 @@ export function useMediaQuery(query: string) {
     return window.matchMedia(query).matches;
   };
 
-  const getServerSnapshot = () => {
-    throw new Error("useMediaQuery: Server-side rendering is not supported");
-  };
-
-  return React.useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+  return React.useSyncExternalStore(subscribe, getSnapshot);
 }

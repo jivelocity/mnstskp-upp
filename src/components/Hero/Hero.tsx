@@ -2,6 +2,12 @@ import React from "react";
 import styles from "./Hero.module.css";
 import { Container } from "../../globalStyle";
 import imageHero from "../../assets/imageHero.png";
+import youtube from "../../assets/yt.png";
+import fb from "../../assets/fb.png";
+import ig from "../../assets/ig.png";
+import tiktok from "../../assets/tiktok.png";
+import circle1 from "../../assets/circle1.png";
+import circle2 from "../../assets/circle2.png";
 
 const Hero: React.FC = () => {
   return (
@@ -18,6 +24,16 @@ const Hero: React.FC = () => {
               memberikan kamu pelbagai insight, karena kami anti-mainstream maka
               kami akan melakukan sebaliknya.
             </p>
+            <div className={styles.leftDecor}>
+              <img src={youtube} alt="youtube" />
+              <img src={circle1} alt="buletan" />
+              <img src={ig} alt="ig" />
+            </div>
+            <div className={styles.rightDecor}>
+              <img src={fb} alt="youtube" />
+              <img src={circle2} alt="buletan" />
+              <img src={tiktok} alt="ig" />
+            </div>
           </div>
           <div className={styles.buttonHeroWrapper}>
             <button>Memulai Sekarang</button>
