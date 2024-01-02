@@ -1,0 +1,55 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  p {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+}
+
+.menuWrapper {
+  list-style: none;
+  padding-left: 0;
+  gap: 3rem;
+  color: hsla(0, 0%, 100%, 0.6);
+  display: none;
+
+  li:first-child {
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
+
+.buttonNavWrapper {
+  display: flex;
+  gap: 1.5rem;
+
+  button {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    padding: 0.5rem 1.5rem;
+    border-radius: 100px;
+  }
+
+  button:last-child {
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 768px) {
+  .menuWrapper {
+    display: flex;
+  }
+}
